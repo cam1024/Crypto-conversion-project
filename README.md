@@ -26,7 +26,6 @@ Design, function & test server side API
 Design, function & test client side API
 
 ## Project Descriptions
-
 Creating a single page that allows the user to save crypto coins of their choice.
 Users can have there searched top 10 coins saved on an accumulated list
 On the list, it will default at the current market price in USD.
