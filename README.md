@@ -2,30 +2,30 @@
 Cryptocurrency converdions
 Application to search different cryptocurrency and convert to values 
 
-## User Story
+User Story:
 AS A owner of crypto currency, I WANT to know my top 10 favorite coins, SO THAT I can convert them into difference currency values
 
-## Framework
+Framework:
 Tailwinds
 Jquery
 
-## Server Side API
+Server Side API:
 Crypto Tracker
 Currency Converter
 
-## Built With
+Built With:
 HTML
 Javascript
 CSS
 
-## Task Breakdown
+Task Breakdown:
 Create layout using HTML
 Style with CSS
 Input Javascript
 Design, function & test server side API
 Design, function & test client side API
 
-## Project Descriptions
+Project Descriptions:
 
 Creating a single page that allows the user to save crypto coins of their choice.
 Users can have there searched top 10 coins saved on an accumulated list
