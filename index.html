@@ -5,34 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Crypto Conversion</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <h2>Crypto Conversion</h2>
+    <nav class="flex items-center justify-between flex-wrap bg-gray-900 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+          <span class="font-semibold text-xl tracking-tight">Crypto Conversion</span>
         </div>
-        <div class="navbar">
-            <ul>
+        <div class="block w-full md:block md:w-auto">
+          <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        <!-- three lines-->
+        
+        </button>
+
+        <!-- Dropdown menu -->
+
+          <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+              <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="multiLevelDropdownButton">
                 <li>
-
+                 <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Conversion</a>
                 </li>
-
                 <li>
-
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Media</a>
                 </li>
-
                 <li>
-
+                  <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a>
                 </li>
-            </ul>
+              </ul>
+          </div>
         </div>
-    </nav>
-
+      </nav>
     <div class="banner">
+
+        <!-- correct size of img -->
+
+        <img class="" src="./assets/Img/Banner.png" alt="coin banner">
 
     </div>
 
+    <!-- search banner-->
+    
+    <div>
+      <form class="flex items-center">   
+        <label for="simple-search" class="sr-only"></label>
+        <div class="relative w-full">
+            </div>
+            <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required>
+        </div>
+    </form>
+
+    </div>
     <main>
         <aside class="left">
             <article>
@@ -44,5 +68,6 @@
 
         </aside>
     </main>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 </body>
 </html>
