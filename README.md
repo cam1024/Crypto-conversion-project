@@ -33,7 +33,7 @@ To Be Updated
 * Design, function & test server side API
 * Design, function & test client side API
 
-## Project Descriptions
+Project Descriptions:
 
 * Creating a single page that allows the user to save crypto coins of their choice.
 * Users can have there searched top 10 coins saved on an accumulated list
@@ -52,4 +52,3 @@ Clone a copy of the repository by going to the repo code and selecting Code. In 
 
 * Screenshot
 * To Be Deployed: 
-
