@@ -1,5 +1,5 @@
 # Crypto-conversion-project
-Cryptocurrency convertions
+Cryptocurrency conversions
 Application to search different cryptocurrency and convert to values 
 
 User Story:
