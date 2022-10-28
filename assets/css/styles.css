@@ -4,3 +4,11 @@
         text-align: centerm ;
     }
 }
+
+main {
+    padding: 20px;
+}
+
+main a {
+    padding-bottom: 10px;
+}
