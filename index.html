@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Crypto Conversion</title>
 </head>
 <body>
@@ -49,7 +50,7 @@
 
     <!-- search banner-->
     
-    <div>
+    <div class="flex items-center justify-end flex-wrap bg-gray-900 p-6">
       <form class="flex items-center">   
         <label for="simple-search" class="sr-only"></label>
         <div class="relative w-full">
@@ -59,16 +60,32 @@
     </form>
 
     </div>
-    <main>
-        <aside class="left">
-            <article>
+    <main class="flex justify-between bg-gray-200">
+      <aside class="justify-start">
+        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bitcoin</h5>
+          <p class="justify-end dark:text-white">value</p>
+        </a>
+        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ethereum</h5>
+            <p class="justify-end dark:text-white">value</p>
+        </a>
+        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Solana</h5>
+          <p class="justify-end dark:text-white">value</p>
+        </a>
+        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Doge</h5>
+          <p class="justify-end dark:text-white">value</p>
+        </a>
+        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Shiba Inu</h5>
+          <p class="justify-end dark:text-white">value</p>
+        </a>
+      </aside>
+      <aside class="w-70 justify-end container">
 
-            </article>
-        </aside>
-
-        <aside class="right">
-
-        </aside>
+      </aside>
     </main>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 </body>
