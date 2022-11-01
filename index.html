@@ -1,92 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Crypto Conversion</title>
 </head>
 <body>
-    <nav class="flex items-center justify-between flex-wrap bg-gray-900 p-6">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <img src="assets/Img/small_ethereum-30.png"/>
-          <span class="font-semibold text-xl tracking-tight">Crypto Conversion</span>
-        </div>
-        <div class="block w-full md:block md:w-auto">
-          <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" class="text-white bg-transparent hover:bg-transparent focus:ring-4 focus:outline-none focus:ring-transparent font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-transparent dark:hover:bg-transparent dark:focus:ring-transparent" type="button"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"><img src="assets/Img/icons8-menu-squared-50.png" /></path>
-        <!-- three lines, added maybe change to grey instead of black-->
-        
-        </button>
-
-        <!-- Dropdown menu -->
-
-          <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
-              <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="multiLevelDropdownButton">
-                <li>
-                 <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Conversion</a>
-                </li>
-                <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Media</a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a>
-                </li>
-              </ul>
-          </div>
-        </div>
-      </nav>
-    <div class="banner"id="coinbanner">
-
-        <!-- correct size of img -->
+    <!-- Navbar -->
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="./assets/Img/Ethereum_logo_translucent.svg.png" width="30" height="30">
+            <h2>Crypto Conversion</h2>
+          </a>
       
-        <img src="./assets/Img/bitcoinbanner.jpg">
-    
-    </div>
-
-    <!-- search banner-->
-    
-    <div class="flex items-center justify-end flex-wrap bg-gray-900 p-6">
-      <form class="flex items-center">   
-        <label for="simple-search" class="sr-only"></label>
-        <div class="relative w-full">
-            </div>
-            <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-transparent block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-    </form>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                Home
+                </a>
+        
+                <a class="navbar-item">
+                Documentation
+                </a>
+        
+                <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
+                </a>
+        
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                    About
+                    </a>
+                    <a class="navbar-item">
+                    Jobs
+                    </a>
+                    <a class="navbar-item">
+                    Contact
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                    Report an issue
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </nav>
 
+    <div class="image">
+        <img src="./assets/Img/bitcoinbanner.png" alt="">
     </div>
-    <main class="flex justify-between bg-gray-200">
-      <aside class="justify-start">
-        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bitcoin</h5>
-          <p class="justify-end dark:text-white">value</p>
-        </a>
-        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ethereum</h5>
-            <p class="justify-end dark:text-white">value</p>
-        </a>
-        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Solana</h5>
-          <p class="justify-end dark:text-white">value</p>
-        </a>
-        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Doge</h5>
-          <p class="justify-end dark:text-white">value</p>
-        </a>
-        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Shiba Inu</h5>
-          <p class="justify-end dark:text-white">value</p>
-        </a>
-      </aside>
-      <aside class="w-70 justify-end container">
 
-      </aside>
+
+
+
+    <main>
+        <div class="columns ">
+        <!-- Section to the left -->
+            <div class="column is-one-third">
+                <div class="card has-background-dark">
+                    <header class="card-header">
+                      <p class="card-header-title has-text-light">
+                        Card header
+                      </p>
+                      <button class="card-header-icon" aria-label="more options">
+                        <span class="icon">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </header>
+                </div>
+                <div class="card has-background-dark">
+                    <header class="card-header">
+                      <p class="card-header-title has-text-light">
+                        Card header
+                      </p>
+                      <button class="card-header-icon" aria-label="more options">
+                        <span class="icon">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </header>
+                </div>
+                <div class="card has-background-dark ">
+                    <header class="card-header">
+                      <p class="card-header-title has-text-light">
+                        Card header
+                      </p>
+                      <button class="card-header-icon" aria-label="more options">
+                        <span class="icon">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </header>
+                </div>
+                <div class="card has-background-dark">
+                    <header class="card-header">
+                      <p class="card-header-title has-text-light">
+                        Card header
+                      </p>
+                      <button class="card-header-icon" aria-label="more options">
+                        <span class="icon">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </header>
+                </div>
+                <div class="card has-background-dark">
+                    <header class="card-header">
+                      <p class="card-header-title has-text-light">
+                        Card header
+                      </p>
+                      <button class="card-header-icon" aria-label="more options">
+                        <span class="icon">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </header>
+                </div>
+            </div>
+
+        <!-- Section to the right -->
+            <div class="column is-five-sixths">
+                <article class="message is-dark shadow">
+                    <div class="message-header">
+                    <p>Hello Welcome!</p>
+                    </div>
+                    <div class="message-body">
+                        Please click any of the buttons to the left to display the information on that specific Crypto Currency and its values.
+                    </div>
+                </article>
+            </div>
+        </div>
     </main>
-    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Crypto Conversion</strong> by <a href="https://github.com/cam1024/Crypto-conversion-project">XenSan, Cam, RJ, and Christopher</a>
+          </p>
+        </div>
+      </footer>
+
+    <script src="./assets/js/crypto.js"></script>
 </body>
 </html>
