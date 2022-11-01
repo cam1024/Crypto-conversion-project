@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1.0
+    , initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <title>Crypto Conversion</title>
+</head>
+<body>
+    <nav class="flex items-center justify-between flex-wrap bg-gray-900 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <img src="assets/Img/small_ethereum-30.png"/>
+          <span class="font-semibold text-xl tracking-tight">Crypto Conversion</span>
+        </div>
+        <div class="block w-full md:block md:w-auto">
+          <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown" class="text-white bg-transparent hover:bg-transparent focus:ring-4 focus:outline-none focus:ring-transparent font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-transparent dark:hover:bg-transparent dark:focus:ring-transparent" type="button"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"><img src="assets/Img/icons8-menu-squared-50.png" /></path>
+        <!-- three lines, added maybe change to grey instead of black-->
+        
+        </button>
+
+        <!-- Dropdown menu -->
+
+          <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+              <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="multiLevelDropdownButton">
+                <li>
+                 <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Conversion</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Media</a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="banner" id="coinbanner">
+        <!-- correct size of img -->
+      
+        <img src="./assets/Img/bitcoinbanner.jpg">
+    
+    </div>
+
+    <!-- search banner-->
+    
+    <div class="flex items-center justify-end flex-wrap bg-gray-900 p-6">
+      <form class="flex items-center">   
+        <label for="simple-search" class="sr-only"></label>
+        <div class="relative w-full">
+            </div>
+            <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-transparent block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required>
+        </div>
+    </form>
+    </div>
+
+    <main class="main">
+      <aside class="justify-start">
+        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-200">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Bitcoin</h5>
+          <p class="justify-end dark:text-Black">value</p>
+        </a>
+        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ethereum</h5>
+            <p class="justify-end dark:text-white">value</p>
+        </a>
+        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Solana</h5>
+          <p class="justify-end dark:text-white">value</p>
+        </a>
+        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Doge</h5>
+          <p class="justify-end dark:text-white">value</p>
+        </a>
+        <a href="#" class="flex justify-between p-6 max-w-sm w-400 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Shiba Inu</h5>
+          <p class="justify-end dark:text-white">value</p>
+        </a>
+      </aside>
+      <aside class="w-70 justify-end container">
+
+      </aside>
+    </main>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+</html>
