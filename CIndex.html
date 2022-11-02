@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Crypto Conversion</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="./assets/Img/Ethereum_logo_translucent.svg.png" width="30" height="30">
+            <h2>Crypto Conversion</h2>
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                Home
+                </a>
+        
+                <a class="navbar-item">
+                Documentation
+                </a>
+        
+                <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
+                </a>
+        
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                    About
+                    </a>
+                    <a class="navbar-item" a href="https://cryptojobslist.com/">
+                    Jobs
+                    </a>
+                    <a class="navbar-item">
+                    Contact
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                    Report an issue
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="image">
+        <img src="./assets/Img/bitcoinbanner.png" alt="bitcoinbanner">
+    </div>
+
+ <!-- removed coin selection -->
+ 
+    <main>
+            <div class="column is-five-sixths">
+                <article class="message is-dark shadow">
+                    <div class="message-header">
+                    <p>We would love to hear your feedback!</p>
+                    </div>
+                    <div class="message-body">
+                        <!-- add in the feedback form -->
+                        <div class="container">
+                            <form action="action_page.php">
+                          
+                              <label for="fname">First Name</label>
+                              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                          
+                              <label for="lname">Last Name</label>
+                              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                              <label for="email">Email</label>
+                              <input type="text" id="email" name="email" placeholder="Your email">
+                          
+                              <label for="issue">Issue</label>
+                              <select id="Issue" name="issue">
+                                <option value="N/A">N/A</option>
+                                <option value="Content">Content</option>
+                                <option value="Question">Question</option>
+                                <option value="Technical">Technical</option>
+                              </select>
+                              <label for="subject">Comments</label>
+                              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                          
+                              <input type="submit" value="Submit">
+                          
+                            </form>
+                          </div>
+                          <!-- end form -->
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Crypto Conversion</strong> by <a href="https://github.com/cam1024/Crypto-conversion-project">XenSan, Cam, RJ, and Christopher</a>
+          </p>
+        </div>
+      </footer>
+
+    <script src="./assets/js/crypto.js"></script>
+</body>
+</html>
