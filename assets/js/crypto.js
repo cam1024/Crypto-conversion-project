@@ -10,16 +10,12 @@ var coin7 = document.getElementById('coin-7');
 var coin8 = document.getElementById('coin-8');
 var coin9 = document.getElementById('coin-9');
 var coin10 = document.getElementById('coin-10');
-​
 let p = document.createElement('p');
-​
-​
 const options = {
     method: 'GET',
     headers: {
     }
 };
-​
 fetch('https://api.coinlore.net/api/global/', options)
     .then(response => response.json())
     .then(response => {
@@ -28,8 +24,6 @@ fetch('https://api.coinlore.net/api/global/', options)
         display.append(p)
     })
     .catch(err => console.error(err));
-​
-​
     fetch('https://api.coinlore.net/api/tickers/', options)
     .then(response => response.json())
     .then(response => {
@@ -45,6 +39,5 @@ fetch('https://api.coinlore.net/api/global/', options)
         coin8.textContent = data[7].rank + ': ' + data[7].name + ': $' + data[7].price_usd;
         coin9.textContent = data[8].rank + ': ' + data[8].name + ': $' + data[8].price_usd;
         coin10.textContent = data[9].rank + ': ' + data[9].name + ': $' + data[9].price_usd;
-​
     })
     .catch(err => console.error(err));
