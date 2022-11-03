@@ -1,5 +1,7 @@
 var searchForm = document.getElementById("search-form");
+
 var title = document.getElementById("title");
+
 var display = document.getElementById("par");
 var coin1 = document.getElementById('coin-1');
 var coin2 = document.getElementById('coin-2');
@@ -11,6 +13,7 @@ var coin7 = document.getElementById('coin-7');
 var coin8 = document.getElementById('coin-8');
 var coin9 = document.getElementById('coin-9');
 var coin10 = document.getElementById('coin-10');
+
 
 
 
@@ -31,14 +34,13 @@ fetch('https://api.coinlore.net/api/global/', options)
     })
     .catch(err => console.error(err));
 
-
 fetch('https://api.coinlore.net/api/tickers/', options)
+
     .then(response => response.json())
     .then(response => {
         console.log(response);
         var data = response.data;
         coin1.textContent = data[0].rank + ': ' + data[0].name + ': $' + data[0].price_usd;
-
         coin2.textContent = data[1].rank + ': ' + data[1].name + ': $' + data[1].price_usd;
         coin3.textContent = data[2].rank + ': ' + data[2].name + ': $' + data[2].price_usd;
         coin4.textContent = data[3].rank + ': ' + data[3].name + ': $' + data[3].price_usd;
@@ -91,6 +93,3 @@ fetch('https://api.coinlore.net/api/tickers/', options)
         })
     })
     .catch(err => console.error(err));
-
-
-
