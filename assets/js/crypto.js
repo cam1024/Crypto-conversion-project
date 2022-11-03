@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 var searchForm = document.getElementById("search-form");
+var title = document.getElementById("title");
 var display = document.getElementById("par");
 var coin1 = document.getElementById('coin-1');
 var coin2 = document.getElementById('coin-2');
@@ -12,8 +12,9 @@ var coin8 = document.getElementById('coin-8');
 var coin9 = document.getElementById('coin-9');
 var coin10 = document.getElementById('coin-10');
 
-let p = document.createElement('p');
 
+
+let p = document.createElement('p');
 
 const options = {
     method: 'GET',
@@ -31,12 +32,13 @@ fetch('https://api.coinlore.net/api/global/', options)
     .catch(err => console.error(err));
 
 
-    fetch('https://api.coinlore.net/api/tickers/', options)
+fetch('https://api.coinlore.net/api/tickers/', options)
     .then(response => response.json())
     .then(response => {
         console.log(response);
         var data = response.data;
         coin1.textContent = data[0].rank + ': ' + data[0].name + ': $' + data[0].price_usd;
+
         coin2.textContent = data[1].rank + ': ' + data[1].name + ': $' + data[1].price_usd;
         coin3.textContent = data[2].rank + ': ' + data[2].name + ': $' + data[2].price_usd;
         coin4.textContent = data[3].rank + ': ' + data[3].name + ': $' + data[3].price_usd;
@@ -47,37 +49,48 @@ fetch('https://api.coinlore.net/api/global/', options)
         coin9.textContent = data[8].rank + ': ' + data[8].name + ': $' + data[8].price_usd;
         coin10.textContent = data[9].rank + ': ' + data[9].name + ': $' + data[9].price_usd;
 
+        coin1.addEventListener("click", function ()  {
+            title.textContent = data[0].name;
+            //display.textContent = 
+        })
+
+        coin2.addEventListener("click", function ()  {
+            title.textContent = data[1].name;
+        })
+
+        coin3.addEventListener("click", function ()  {
+            title.textContent = data[2].name;
+        })
+
+        coin4.addEventListener("click", function ()  {
+            title.textContent = data[3].name;
+        })
+
+        coin5.addEventListener("click", function ()  {
+            title.textContent = data[4].name;
+        })
+
+        coin6.addEventListener("click", function ()  {
+            title.textContent = data[5].name;
+        })
+
+        coin7.addEventListener("click", function ()  {
+            title.textContent = data[6].name;
+        })
+
+        coin8.addEventListener("click", function ()  {
+            title.textContent = data[7].name;
+        })
+
+        coin9.addEventListener("click", function ()  {
+            title.textContent = data[8].name;
+        })
+
+        coin10.addEventListener("click", function ()  {
+            title.textContent = data[9].name;
+        })
     })
     .catch(err => console.error(err));
 
-=======
-const apiKey = 'coinranking31372a0279a88b1cc0538d1885e1627c3a8da8f9b1e7e1b1';
-const url = 'https://api.coinranking.com/v2/coins';
-const resultsContainer = document.getElementById('results');
-const queryString = new URLSearchParams({
-  'x-access-token': apiKey,
-  search: 'Bit',
-});
-// Add the API key to the querystring
-fetch(`${url}?${queryString}`)
-  .then((response) => response.json())
-  .then((response) => {
-    if (response.status === 'success') {
-      const html = response.data.coins.map((coin) => `
-        <tr>
-          <td>${coin.rank}</td>
-          <td>${coin.name}</td>
-          <td>${coin.price}</td>
-        </tr>
-      `);
 
-      resultsContainer.innerHTML = html.join('');
-    } else {
-      // Show error message if the request failed
-      resultsContainer.innerHTML = `<tr><td colspan="3">${response.message}</td></tr>`;
-    }
-  })
-  .catch((error) => {
-    console.error(error);
-  });
->>>>>>> e92b0d759e91a79d3c000cf81fa2ce52a7970329
+
