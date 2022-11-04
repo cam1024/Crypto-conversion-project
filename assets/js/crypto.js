@@ -1,4 +1,7 @@
 var searchForm = document.getElementById("search-form");
+
+var title = document.getElementById("title");
+
 var display = document.getElementById("par");
 var coin1 = document.getElementById('coin-1');
 var coin2 = document.getElementById('coin-2');
@@ -10,16 +13,18 @@ var coin7 = document.getElementById('coin-7');
 var coin8 = document.getElementById('coin-8');
 var coin9 = document.getElementById('coin-9');
 var coin10 = document.getElementById('coin-10');
-​
+
+
+
+
 let p = document.createElement('p');
-​
-​
+
 const options = {
     method: 'GET',
     headers: {
     }
 };
-​
+
 fetch('https://api.coinlore.net/api/global/', options)
     .then(response => response.json())
     .then(response => {
@@ -28,9 +33,9 @@ fetch('https://api.coinlore.net/api/global/', options)
         display.append(p)
     })
     .catch(err => console.error(err));
-​
-​
-    fetch('https://api.coinlore.net/api/tickers/', options)
+
+fetch('https://api.coinlore.net/api/tickers/', options)
+
     .then(response => response.json())
     .then(response => {
         console.log(response);
@@ -45,6 +50,46 @@ fetch('https://api.coinlore.net/api/global/', options)
         coin8.textContent = data[7].rank + ': ' + data[7].name + ': $' + data[7].price_usd;
         coin9.textContent = data[8].rank + ': ' + data[8].name + ': $' + data[8].price_usd;
         coin10.textContent = data[9].rank + ': ' + data[9].name + ': $' + data[9].price_usd;
-​
+
+        coin1.addEventListener("click", function ()  {
+            title.textContent = data[0].name;
+            //display.textContent = 
+        })
+
+        coin2.addEventListener("click", function ()  {
+            title.textContent = data[1].name;
+        })
+
+        coin3.addEventListener("click", function ()  {
+            title.textContent = data[2].name;
+        })
+
+        coin4.addEventListener("click", function ()  {
+            title.textContent = data[3].name;
+        })
+
+        coin5.addEventListener("click", function ()  {
+            title.textContent = data[4].name;
+        })
+
+        coin6.addEventListener("click", function ()  {
+            title.textContent = data[5].name;
+        })
+
+        coin7.addEventListener("click", function ()  {
+            title.textContent = data[6].name;
+        })
+
+        coin8.addEventListener("click", function ()  {
+            title.textContent = data[7].name;
+        })
+
+        coin9.addEventListener("click", function ()  {
+            title.textContent = data[8].name;
+        })
+
+        coin10.addEventListener("click", function ()  {
+            title.textContent = data[9].name;
+        })
     })
     .catch(err => console.error(err));
